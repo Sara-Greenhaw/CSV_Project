@@ -1,2 +1,4 @@
 .vscode/
-csv_project/
+.venv/
+#slash means ignore parent folder and everything below parent folder
+#this wont update to repository
