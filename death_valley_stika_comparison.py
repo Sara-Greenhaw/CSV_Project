@@ -101,7 +101,7 @@ def main():
     a[1].fill_between(dates, highs, lows, facecolor ='blue', alpha=0.1)
 
     #format big plot overall
-    fig.suptitle(f'Temperature comp between {place_name} and {place_name2}')
+    fig.suptitle(f'Temperature Comparison Between {place_name} and {place_name2}')
     plt.xlabel("", fontsize=12)
     plt.tick_params(axis='both', which='major', labelsize=12)
     fig.autofmt_xdate
