@@ -76,7 +76,7 @@ def main():
     #get dates, highs, and lows from this file
     dates, highs, lows = [], [], []
     for row in reader:
-    #automatically gets name of place (death valley) from file
+    #automatically gets name of place (sitka) from file
         if not place_name2:
             place_name2 = str(row[name_index])
             print(place_name2)
@@ -94,10 +94,10 @@ def main():
             highs.append(high) #gives high temps for file
             dates.append(converted_date)
             lows.append(low)
-    #now lets graph second subplot for death valley weather
+    #now lets graph second subplot for sitka weather
     a[1].set_title(place_name2)
-    a[1].plot(dates, highs, c='red')
-    a[1].plot(dates, lows, c='blue')
+    a[1].plot(dates, highs, c='red', alpha =0.5)
+    a[1].plot(dates, lows, c='blue', alpha=0.5)
     a[1].fill_between(dates, highs, lows, facecolor ='blue', alpha=0.1)
 
     #format big plot overall
