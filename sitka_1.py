@@ -9,6 +9,7 @@ csv_file = csv.reader(open_file, delimiter = ",")
 #reads the header, then from here cursor is past the first row in csv file, but not in regular
 header_row = next(csv_file)
 
+#header_row is printed as: ['STATION', 'NAME', 'DATE', 'PRCP', 'TAVG', 'TMAX', 'TMIN']
 #looking at index value and what index is assoc. w data item
 
 #the enumerate() function returns both the index of each item and the value

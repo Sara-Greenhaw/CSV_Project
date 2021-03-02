@@ -1,0 +1,6 @@
+create virtual environment
+in terminal:
+py -3 -m venv .venv
+
+to activate:
+py -3 -m venv .venv
